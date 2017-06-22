@@ -21,6 +21,11 @@ function HomeController(BikeDataFactory, $state) {
     $state.go('station', { id: stationData.id });
   };
 
+  this.getPercentage = (free, empty) => {
+    // console.log(Math.ceil( (free/empty) * 100 ) )
+    return Math.ceil( ((free / (empty+free) * 100 )))
+  }
+
   this.fetchData();
 
 };
