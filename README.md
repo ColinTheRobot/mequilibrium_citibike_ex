@@ -1,7 +1,7 @@
-## Deployment link
+## Link to deployed app
 https://mequilibrium-code-challenge.herokuapp.com/#/
 
-
+## Spec
 Create a small single page application in Angular or React (we prefer Angular but whichever you are most comfortable with) that fetches data about the network of Citybikes in Boston (http://api.citybik.es/v2/networks/hubway), and allows the user to update some of the information, with the following requirements:
 
 - The name of the bike network and the city it's located in should be displayed at the top of the main page. 
