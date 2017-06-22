@@ -2,14 +2,16 @@
   <div class="mui-appbar">
     <table width="100%">
       <tr style="vertical-align:middle;">
-        <td class="mui--appbar-line-height"><h1>{{home.bikeData.name}} | {{home.bikeData.location.city}}</h1></td>
+        <div class="banner mui--text-light-secondary mui--text-display2">
+          {{home.bikeData.name}} | {{home.bikeData.location.city}}
+        </div>
       </tr>
     </table>
   </div>
   <div ng-repeat="stationData in home.bikeData.stations">
     <div class="station">
 
-      <h4>{{stationData.name}}</h4>
+      <div class="station-name mui--text-dark mui--text-headline">{{stationData.name}}</div>
       <button class="mui-btn mui-btn--raised mui-btn--primary" ng-click="home.showStation(stationData)">Update Available Bikes</button>
       <dl>
         <dd class="percentage percentage-{{home.getPercentage(stationData.free_bikes, stationData.empty_slots)}}">
