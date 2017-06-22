@@ -8,7 +8,12 @@
       </tr>
     </table>
   </div>
-  <div ng-repeat="stationData in home.bikeData.stations">
+
+  <div class="mui-textfield">
+    <input type="text" placeholder="search" ng-model="searchBar">
+  </div>
+
+  <div ng-repeat="stationData in home.bikeData.stations | filter: searchBar">
     <div class="station">
 
       <div class="station-name mui--text-dark mui--text-headline">{{stationData.name}}</div>

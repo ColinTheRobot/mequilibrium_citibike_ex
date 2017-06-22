@@ -6,6 +6,11 @@ h1 {
   margin-top: 10px;
 }
 
+input {
+  text-align: center;
+  font-size: 24px !important;
+}
+
 .banner {
   padding-top: 5px;
 }
