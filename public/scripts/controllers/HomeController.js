@@ -1,4 +1,4 @@
-function HomeController(BikeDataFactory) {
+function HomeController(BikeDataFactory, $state) {
 
   this.fetchData = () => {
     BikeDataFactory
@@ -14,6 +14,11 @@ function HomeController(BikeDataFactory) {
 
   this.decrement = (station) => {
     station.free_bikes--;
+  };
+
+  this.showStation = (stationData) => {
+    this.stationData = stationData;
+    $state.go('station', { id: stationData.id });
   };
 
   this.fetchData();
