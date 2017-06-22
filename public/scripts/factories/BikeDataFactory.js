@@ -1,7 +1,7 @@
 function BikeDataFactory($http) {
-  // commented out when the API crashed
-  // var API = '//api.citybik.es/v2/networks/hubway';
-  var API = '/data';
+  //  data contains example data from API in case of crash
+  var API = '//api.citybik.es/v2/networks/hubway';
+  // var API = '/data';
 
   var fetchData = () => {
     return $http
