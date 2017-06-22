@@ -13,8 +13,8 @@ function station() {
         <p>Free Bikes: {{data.free_bikes}}</p>
 
         <div>
-          <button class="mui-btn mui-btn--small mui-btn--fab mui-btn--primary" type="button" ng-click="home.increment(data)"> + </button>
           <button class="mui-btn mui-btn--small mui-btn--fab mui-btn--danger"type="button" ng-click="home.decrement(data)"> - </button>
+          <button class="mui-btn mui-btn--small mui-btn--fab mui-btn--primary" type="button" ng-click="home.increment(data)"> + </button>
         </div>
     `
   };
