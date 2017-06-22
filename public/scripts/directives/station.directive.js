@@ -10,9 +10,7 @@ function station() {
     controller: 'HomeController as home',
     template: `
         <h4>{{data.name}}</h4>
-        <ul>
-          <li>Free Bikes: <span ng-bind="data.free_bikes"></span></li>
-        </ul>
+        <p>Free Bikes: {{data.free_bikes}}</p>
 
         <div>
           <button class="mui-btn mui-btn--small mui-btn--fab mui-btn--primary" type="button" ng-click="home.increment(data)"> + </button>

@@ -26,7 +26,6 @@ function HomeController(BikeDataFactory, $state) {
   };
 
   this.getPercentage = (free, empty) => {
-    // console.log(Math.ceil( (free/empty) * 100 ) )
     return Math.ceil( ((free / (empty+free) * 100 )))
   }
 
