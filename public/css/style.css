@@ -303,12 +303,8 @@
   width: 100%;
 }
 .percentage {
-  font-size: .8em;
-  line-height: 1;
-  text-transform: uppercase;
   width: 25%;
   background-color: lightgrey;
-  border-right: 1px solid green;
   height: 40px;
 }
 
@@ -321,6 +317,4 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    transition: background-color .3s ease;
-    cursor: pointer;
   }
