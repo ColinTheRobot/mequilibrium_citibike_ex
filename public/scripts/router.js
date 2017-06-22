@@ -6,7 +6,12 @@ function Router($stateProvider, $urlRouterProvider){
 
     $stateProvider
     .state('index', {
-          url: '/'
+      url: '/',
+      templateUrl: '/partials/index.html'
+    })
+    .state('station', {
+      url:'/station/:id',
+      templateUrl: '/partials/station.html'
     })
 }
 

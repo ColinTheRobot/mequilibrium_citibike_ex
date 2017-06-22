@@ -22,11 +22,6 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body ng-controller="HomeController as home">
-    <div ng-controller="CityBikeController as bikes">
-      <h1>{{home.bikeData.name}} | {{home.bikeData.location.city}}</h1>
-      <div ng-repeat="stationData in home.bikeData.stations">
-         <station data="stationData"></station>
-      </div>
-    </div>
+    <ui-view></ui-view>
   </body>
 </html>

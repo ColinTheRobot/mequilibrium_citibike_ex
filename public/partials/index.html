@@ -1,0 +1,7 @@
+<div>
+  <h1>{{home.bikeData.name}} | {{home.bikeData.location.city}}</h1>
+  <div ng-repeat="stationData in home.bikeData.stations">
+    <h4>{{stationData.name}} | {{stationData.free_bikes}}</h4>
+    <button class="mui-btn mui-btn--raised mui-btn--primary" ng-click="home.showStation(stationData)">View Hub Information</button>
+  </div>
+</div>
