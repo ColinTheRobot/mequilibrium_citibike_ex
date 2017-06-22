@@ -1,4 +1,4 @@
-angular.module('giphyAngularApp')
+angular.module('cityBikeApp')
   .controller('HomeController', HomeController)
   .controller('CityBikeController', CityBikeController)
 
