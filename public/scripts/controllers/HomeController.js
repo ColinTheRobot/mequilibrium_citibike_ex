@@ -9,11 +9,15 @@ function HomeController(BikeDataFactory, $state) {
   };
 
   this.increment = (station) => {
+    if (station.empty_slots == 0) return;
     station.free_bikes++;
+    station.empty_slots--;
   };
 
   this.decrement = (station) => {
+    if (station.free_bikes == 0) return;
     station.free_bikes--;
+    station.empty_slots++;
   };
 
   this.showStation = (stationData) => {
