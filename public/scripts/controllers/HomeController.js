@@ -4,7 +4,7 @@ function HomeController(BikeDataFactory, $state) {
     BikeDataFactory
       .fetchData()
       .then((response)=> {
-        this.bikeData = response.data.network;
+        this.bikeData = response;
       });
   };
 
@@ -13,6 +13,16 @@ function HomeController(BikeDataFactory, $state) {
     station.free_bikes++;
     station.empty_slots--;
   };
+
+  this.fetchStation = (id) => {
+    if (this.stationData) return;
+
+    stationArray =  this.bikeData.stations.filter((value) => {
+      return value.id == id
+    })
+
+    return stationArray[0]
+  }
 
   this.decrement = (station) => {
     if (station.free_bikes == 0) return;

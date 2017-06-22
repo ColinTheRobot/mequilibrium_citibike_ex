@@ -6,8 +6,8 @@ function BikeDataFactory($http) {
   var fetchData = () => {
     return $http
       .get(API)
-      .then((data) => {
-        return data;
+      .then((response) => {
+        return response.data.network
       })
       .catch((err) => {
         console.error(err, err)
