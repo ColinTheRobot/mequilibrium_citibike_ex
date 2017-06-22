@@ -1,0 +1,23 @@
+{
+  "name": "mequilibrium_citibike_ex",
+  "version": "1.0.0",
+  "description": "code challenge for mequilibirum",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ColinTheRobot/mequilibrium_citibike_ex.git"
+  },
+  "author": "Colin Hart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ColinTheRobot/mequilibrium_citibike_ex/issues"
+  },
+  "homepage": "https://github.com/ColinTheRobot/mequilibrium_citibike_ex#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "morgan": "^1.8.2"
+  }
+}
