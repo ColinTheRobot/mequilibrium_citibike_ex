@@ -8,17 +8,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
     <!-- ROUTER -->
     <script src="/scripts/router.js"></script>
+    <!-- FACTORIES -->
+    <script src="/scripts/factories/BikeDataFactory.js"></script>
     <!-- CONTROLLERS -->
-    <script src="/scripts/controllers/home_controller.js"></script>
-    <script src="/scripts/controllers/city_bike_controller.js"></script>
+    <script src="/scripts/controllers/HomeController.js"></script>
+    <script src="/scripts/controllers/CityBikeController.js"></script>
+    <!-- DIRECTIVES -->
+    <script src="/scripts/directives/station.directive.js"></script>
     <!-- APP -->
     <script src="/scripts/app.js"></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body ng-controller="HomeController as home">
     <div ng-controller="CityBikeController as bikes">
-
-      <h1>{{bikes.test}}</h1>
+      <h1>{{home.bikeData.name}} | {{home.bikeData.location.city}}</h1>
+      <div ng-repeat="stationData in home.bikeData.stations">
+         <station data="stationData"></station>
+      </div>
     </div>
   </body>
 </html>
