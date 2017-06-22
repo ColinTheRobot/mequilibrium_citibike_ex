@@ -11,6 +11,11 @@ input {
   font-size: 24px !important;
 }
 
+.search {
+  margin: 0 auto;
+  width: 75%;
+}
+
 .banner {
   padding-top: 5px;
 }
